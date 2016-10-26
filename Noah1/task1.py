@@ -45,8 +45,7 @@ class LoginUser():
     def get_page(self):
         """Get user index page."""
         self.login()
-        response = requests.get(posturl, cookies=self.cookies)
+        response = requests.get("posturl",cookies=self.cookies)
         # get page of 'http://222.204.3.49:8082/user/Index.aspx'
         return '【赖强】'
-
-
+        return response.text
